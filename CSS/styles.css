@@ -47,11 +47,11 @@
   height: 5px;
   width: 5px;
   position: relative;
-  top: -20%;
+  top: -10%;
 }
 
 #food {
-  background-color: transparent;
+  background-color: black;
   height: 5px;
   width: 5px;
   position: relative;
