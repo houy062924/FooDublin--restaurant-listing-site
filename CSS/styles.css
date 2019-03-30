@@ -34,15 +34,51 @@
   color: #ffffff;
 }
 
-.container-fluid {
-  max-width: 70vw;
-  padding: 90px;
+#home {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
+
+#culture {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
+
+#food {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
+
+#events {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
+
+#team {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
 }
 
 .par {
-  max-width: 55%;
+  max-width: 60%;
   text-align: justify;
   font-family: Montserrat, sans-serif;
+  padding: 80px;
 }
 
 .par_title {
@@ -62,6 +98,9 @@
 
 /*Meet the team*/
 
+.team {
+  max-width: 70vw;
+}
 
 .team_image {
   width: 100%
