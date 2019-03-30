@@ -36,18 +36,35 @@
 
 .container-fluid {
   max-width: 70vw;
-  padding: 60px 50px;
+  padding: 50px 50px;
+}
+
+.par {
+  max-width: 55%;
+  text-align: justify;
   font-family: Montserrat, sans-serif;
 }
 
-#culture_text {
-  max-width: 55%;
-  text-align: justify;
+.par_title {
+  font-size: 26px;
+  padding-top: 70px;
+  font-family: Montserrat, sans-serif;
 }
+
+.par_text {
+  font-size: 15px;
+}
+
 
 /*Meet the team*/
 
-#team {
+
+.team_image {
+  width: 100%
+}
+
+#team_text{
+  width: 100%;
   font-family: Montserrat, sans-serif;
 }
 
