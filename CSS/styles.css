@@ -43,11 +43,11 @@
 }
 
 #culture {
-  background-color: transparent;
+  background-color: black;
   height: 5px;
   width: 5px;
   position: relative;
-  top: -10%;
+  top: -20%;
 }
 
 #food {
