@@ -100,6 +100,8 @@
 
 .team {
   max-width: 70vw;
+  margin-bottom: 20px;
+  padding: 30px;
 }
 
 .team_image {
@@ -146,4 +148,16 @@
 
 .title {
   color: grey;
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f4511e;
+}
+
+footer .f_text {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 30px;
 }
