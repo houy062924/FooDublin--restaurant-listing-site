@@ -121,7 +121,6 @@ p {
     grid-row-end: 6;
 }
 
-
 .gallery__item--3 {
     grid-column-start: 4;
     grid-column-end: 7;
@@ -136,12 +135,57 @@ p {
     grid-row-end: 6;
 }
 
-
 .gallery__item--5 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
+}
+
+
+/*editing*/
+
+.market_text {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 4vw);
+}
+
+.market_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.market__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.market__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    background-color: red;
+}
+
+.market__item--3 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    background-color: orange;
+}
+
+.market__item--4 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    background-color: blue;
 }
 
 
@@ -199,6 +243,9 @@ p {
   width: 100%;
 }
 
+.cont_grey {
+  background-color: #f6f6f6;
+}
 /*Meet the team*/
 
 .team {
