@@ -97,7 +97,7 @@ p {
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-rows: repeat(5, 5vw);
     grid-gap: 15px;
 }
 
@@ -142,13 +142,6 @@ p {
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
-}
-
-.gallery__item--6 {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
 }
 
 
