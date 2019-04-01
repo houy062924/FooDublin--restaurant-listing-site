@@ -27,6 +27,8 @@
   text-align: center;
   font-family: Montserrat, sans-serif;
   height: 100vh;
+  position: relative;
+  top: 50%;
 }
 
 #jum_color {
@@ -50,6 +52,12 @@
   background: #f9f9f9;
   padding: 25px;
   font-family: Montserrat, sans-serif;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 80%;
+    }
 }
 
 .par_title {
@@ -78,7 +86,11 @@ p {
   height: 500px;
 }
 
-
+.white_space {
+  height: 27px;
+  width: 100%;
+  background-color: transparent;
+}
 
 
 #culture {
