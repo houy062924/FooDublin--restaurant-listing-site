@@ -211,6 +211,7 @@ hr {
 .par_title {
   font-size: 26px;
   font-family: Montserrat, sans-serif;
+  text-align: left;
 }
 
 .par_text {
@@ -316,4 +317,8 @@ footer .glyphicon {
 .f_text {
   font-family: Montserrat, sans-serif;
   margin-bottom: 30px;
+}
+
+.Logo {
+  padding-top: 75px;
 }
