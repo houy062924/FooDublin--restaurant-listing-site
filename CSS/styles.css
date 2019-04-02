@@ -125,10 +125,12 @@
   text-align: center;
 }
 
-hr {
-  height: 30px;
+.hr {
   width: 60%;
-  color: black;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 2px solid #eee;
 }
 
 .intro {
