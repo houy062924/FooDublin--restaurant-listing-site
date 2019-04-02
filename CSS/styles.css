@@ -1,3 +1,5 @@
+
+/*------------------navigation bar--------------------*/
 .navbar {
   margin-bottom: 0;
   background-color: #f4511e !important;
@@ -23,6 +25,19 @@
   color: #fff !important;
 }
 
+.container_nav {
+  width: 100vw;
+}
+
+@media (min-width: 1200px) {
+    .container_nav {
+        max-width: 100%;
+    }
+}
+
+
+/*-------------------home page-----------------------*/
+
 .jumbotron {
   text-align: center;
   font-family: Montserrat, sans-serif;
@@ -34,6 +49,10 @@
   color: #ffffff;
 }
 
+
+/*---------linking navigation buttons to different parts in the page--------*/
+/*NEEDS EDITING AFTER CONTENT IS IN*/
+
 #home {
   background-color: transparent;
   height: 5px;
@@ -42,8 +61,40 @@
   top: -10%;
 }
 
+#culture {
+  background-color: black;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
+
+#food {
+  background-color: black;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
+
+#events {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
+
+#team {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: -10%;
+}
 
 
+/*-----------intro page-----------*/
 
 .container {
   margin: 0 auto;
@@ -70,7 +121,7 @@ hr {
   color: black;
 }
 
-p {
+.intro {
   font-size: 20px;
   line-height: 1.6;
   text-align: center;
@@ -89,6 +140,9 @@ p {
   width: 100%;
   background-color: transparent;
 }
+
+
+/*--------------gallery---------------*/
 
 .container_gal {
   background-color: white;
@@ -143,83 +197,8 @@ p {
 }
 
 
-/*editing*/
 
-.market_text {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(8, 4vw);
-}
-
-.market_item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.market__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-.market__item--2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 9;
-    background-color: red;
-}
-
-.market__item--3 {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 9;
-    background-color: orange;
-}
-
-.market__item--4 {
-    grid-column-start: 7;
-    grid-column-end: 10;
-    grid-row-start: 4;
-    grid-row-end: 9;
-    background-color: blue;
-}
-
-
-#culture {
-  background-color: black;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
-
-#food {
-  background-color: black;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
-
-#events {
-  background-color: transparent;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
-
-#team {
-  background-color: transparent;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
+/*-------------------paragraphs--------------------*/
 
 .par {
   max-width: 60%;
@@ -246,21 +225,26 @@ p {
 .cont_grey {
   background-color: #f6f6f6;
 }
-/*Meet the team*/
+
+
+
+/*--------------------Meet the team------------------------------*/
 
 .team {
   max-width: 70vw;
   margin-bottom: 20px;
   padding: 30px;
+  background-color: transparent;
 }
 
 .team_image {
   width: 100%
 }
 
-#team_text{
+#team_text {
   width: 100%;
   font-family: Montserrat, sans-serif;
+  background-color: transparent;
 }
 
 /* Three columns side by side*/
@@ -271,7 +255,6 @@ p {
   padding: 0 8px;
 }
 
-/* Display the columns below each other instead of side by side on small screens*/
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
@@ -279,13 +262,10 @@ p {
   }
 }
 
-/* Add some shadows to create a card effect */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-/* Clear floats */
 .container::after, .row::after {
   content: "";
   clear: both;
@@ -294,16 +274,29 @@ p {
 
 .team_name {
   font-size: 25px;
+  text-align: left;
 }
 
 .title {
   color: grey;
+  text-align: left;
+}
+
+.team_text {
+    text-align: left;
+}
+
+
+/*----------------footer---------------*/
+
+.par_footer {
+  max-width: 60%;
+  text-align: justify;
+  font-family: Montserrat, sans-serif;
 }
 
 footer .glyphicon {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
   color: #f4511e;
 }
 

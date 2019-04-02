@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <head>
 
-  <!--TODO-->
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="CSS\styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
@@ -51,7 +49,7 @@
   <div class="parallax"></div>
 
   <div class="container">
-    <p>At the heart of any city, and central to many friendships, food is integral to our daily life. Explore Dublin's rich culinary options through local markets, casual cafe's, or chic restaurants. We want you to be aware of your options and open to exploring new flavours, cultures, and experiences. A perfect way to connect to a place or to another person, we hope you enjoy our handpicked recommendations!</p>
+    <p class="intro">At the heart of any city, and central to many friendships, food is integral to our daily life. Explore Dublin's rich culinary options through local markets, casual cafe's, or chic restaurants. We want you to be aware of your options and open to exploring new flavours, cultures, and experiences. A perfect way to connect to a place or to another person, we hope you enjoy our handpicked recommendations!</p>
   </div>
 
   <div class="white_space"></div>
@@ -138,8 +136,8 @@
          </ul>
        </p>
      </div>
-    </div>
    </div>
+  </div>
 
   <div id="fancy"></div>
 
@@ -193,7 +191,7 @@
      </div>
    </div>
 <!--Meet The Team-->
-  <div>
+  <div class="bg-grey">
     <div class="container team">
       <h3 class="par_title">Meet the TEAM!</h3>
       <div class="row">
@@ -236,13 +234,44 @@
     </div>
   </div>
 
+
   <script type="text/javascript" src="JS\background.js"></script>
 
 </body>
 
-<footer class="container-fluid text-center">
-  <a href="#food" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p class="f_text">Back To Top</p>
+<footer class="container-fluid par_footer">
+  <h2 class="text-center">CONTACT</h2>
+  <hr>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid  text-center">
+    <a href="#food" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p class="f_text">Back To Top</p>
+  </div>
 </footer>
