@@ -35,6 +35,13 @@
     }
 }
 
+.button_logo:hover {
+  background-color: white;
+}
+
+.nav_logo {
+  width: 100px;
+}
 
 /*-------------------home page-----------------------*/
 
@@ -60,6 +67,11 @@
   top: 35%;
 }
 
+.Logo {
+  padding-top: 10px;
+  height: auto;
+  width: 400px;
+}
 
 /*---------linking navigation buttons to different parts in the page--------*/
 /*NEEDS EDITING AFTER CONTENT IS IN*/
@@ -118,12 +130,6 @@
     .container{
         max-width: 80%;
     }
-}
-
-.par_title {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
 }
 
 .hr {
@@ -330,9 +336,4 @@ footer .glyphicon {
 .f_text {
   font-family: Montserrat, sans-serif;
   margin-bottom: 30px;
-}
-
-.Logo {
-  padding-top: 75px;
-  height: auto;
 }
