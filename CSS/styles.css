@@ -49,6 +49,17 @@
   color: #ffffff;
 }
 
+.header {
+  height: 23%;
+  width: 60%;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  color: #f4511e;
+  position: relative;
+  top: 35%;
+}
+
 
 /*---------linking navigation buttons to different parts in the page--------*/
 /*NEEDS EDITING AFTER CONTENT IS IN*/
@@ -115,10 +126,12 @@
   text-align: center;
 }
 
-hr {
-  height: 30px;
+.hr {
   width: 60%;
-  color: black;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 2px solid #eee;
 }
 
 .intro {
