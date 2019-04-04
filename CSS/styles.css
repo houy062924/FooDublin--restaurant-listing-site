@@ -252,7 +252,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #f4511e;
 }
 
 .cont_hover:hover .overlay {
@@ -405,6 +405,34 @@ footer .glyphicon {
   font-size: 20px;
   color: #f4511e;
 }
+
+.fa {
+  padding: 5px;
+  font-size: 5px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+.fa-facebook {
+  background: #f4511e;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f4511e;
+  color: white;
+}
+
+.fa-twitter {
+  background: #f4511e;
+  color: white;
 
 .f_text {
   font-family: Montserrat, sans-serif;
