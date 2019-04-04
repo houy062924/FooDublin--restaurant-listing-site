@@ -26,7 +26,7 @@
 }
 
 .container_nav {
-  width: 100vw;
+  width: 99%;
 }
 
 @media (min-width: 1200px) {
@@ -42,6 +42,8 @@
 .nav_logo {
   width: 100px;
 }
+
+
 
 /*-------------------home page-----------------------*/
 
@@ -73,51 +75,37 @@
   width: 600px;
 }
 
+
+
 /*---------linking navigation buttons to different parts in the page--------*/
-/*NEEDS EDITING AFTER CONTENT IS IN*/
-
-#home {
-  background-color: transparent;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
-
-#culture {
-  background-color: black;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
 
 #food {
-  background-color: black;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
-
-#events {
   background-color: transparent;
   height: 5px;
   width: 5px;
-  position: relative;
-  top: -10%;
+  position: absolute;
+  top: 93%;
+  z-index: 999;
+}
+
+#recommendations {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 328%;
 }
 
 #team {
   background-color: transparent;
   height: 5px;
   width: 5px;
-  position: relative;
-  top: -10%;
+  position: absolute;
+  top: 458%;
 }
 
 
-/*-----------intro page-----------*/
+/*------------------------universal------------------------*/
 
 .container {
   margin: 0 auto;
@@ -140,6 +128,32 @@
   border-top: 2px solid #eee;
 }
 
+.par_title {
+  font-size: 30px;
+  font-family: Montserrat, sans-serif;
+}
+
+.white_space {
+  height: 27px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.grey_space {
+  height: 27px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.bg-grey {
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+
+
+/*------------------------intro page-----------------------*/
+
 .intro {
   font-size: 18px;
   line-height: 1.6;
@@ -155,14 +169,9 @@
   height: 500px;
 }
 
-.white_space {
-  height: 27px;
-  width: 100%;
-  background-color: transparent;
-}
 
 
-/*--------------gallery---------------*/
+/*---------------------------gallery--------------------------*/
 
 .container_gal {
   background-color: white;
@@ -217,34 +226,133 @@
 }
 
 
+/* -------------------------------Tab----------------------------- */
 
-/*-------------------paragraphs--------------------*/
+.container_par {
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  color: #333333;
+  font-size: 20px;
+  margin-top: 10px;
+  position: relative;
+  left: 9%;
+  max-width: 80vw;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-bottom: 3px solid #fcdcd2;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: transparent;
+  color: #333333;
+  border-bottom: 3px solid #f4511e;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: white;
+  color: #333333;
+  border-bottom: 3px solid #f4511e;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+
+
+
+/*--------------------------paragraphs--------------------------*/
 
 .par {
-  max-width: 60%;
-  text-align: justify;
-  font-family: Montserrat, sans-serif;
-  padding: 80px;
-}
-
-.par_title {
-  font-size: 26px;
-  font-family: Montserrat, sans-serif;
-  text-align: left;
-}
-
-.par_text {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
-.bg-grey {
-  background-color: #f6f6f6;
+.overlay_cont {
+  position: relative;
   width: 100%;
+  height: 100%;
+  display: inline-block;
 }
 
-.cont_grey {
-  background-color: #f6f6f6;
+.event_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f4511e;
+}
+
+.cont_hover:hover .overlay {
+  opacity: 1;
+}
+
+.overlay_text {
+  color: white;
+  width: 90%;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .overlay_text {
+    color: white;
+    width: 90%;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 
@@ -320,17 +428,49 @@
   color: #f4511e;
 }
 
-/*----------------footer---------------*/
+
+
+/*------------------------------footer----------------------------*/
 
 .par_footer {
   max-width: 60%;
   text-align: justify;
   font-family: Montserrat, sans-serif;
+  margin: 0 auto;
 }
 
 footer .glyphicon {
   font-size: 20px;
   color: #f4511e;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 5px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+.fa-facebook {
+  background: #f4511e;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f4511e;
+  color: white;
+}
+
+.fa-twitter {
+  background: #f4511e;
+  color: white;
 }
 
 .f_text {

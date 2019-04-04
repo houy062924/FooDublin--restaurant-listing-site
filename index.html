@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 
-<!--TO BE FIXED: 1.nav bar not showing which page I'm on  2.smooth scrolling not working  3.logo position in nav bar  4.paragraph layout design-->
-
-
 <head>
 
   <title>foodublin</title>
   <link rel="stylesheet" type="text/css" href="CSS\styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 
-<body data-spy='scroll' data-target='.navbar' data-offset='50'>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" onload="document.getElementById('defaultOpen').click();">
 
 
 <!-- navigation bar -->
@@ -25,19 +24,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#home">
+        <a href="#myPage" class="navbar-brand">
           <button class="btn btn-default">
             <img src="top-logo.JPG" class="nav_logo" alt="Logo">
           </button>
-         </a>
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#food">FOOD</a></li>
-          <li><a href="#markets">MARKETS</a></li>
-          <li><a href="#cafes">CAFES</a></li>
-          <li><a href="#international">INTERNATIONAL</a></li>
-          <li><a href="#fancy">FANCY</a></li>
+          <li><a href="#recommendations">RECOMMENDATIONS</a></li>
           <li><a href="#team">TEAM</a></li>
         </ul>
       </div>
@@ -45,15 +41,15 @@
   </nav>
 
 <!-- intro page -->
-  <div id="food"></div>
-
   <div class="jumbotron" id="jum_color">
     <h1>WELCOME FOODIES</h1>
     <p> <img src="foodub (1).JPG" alt="Logo" class="Logo"> </p>
   </div>
 
+  <div id="food"></div>
+
   <div class="container">
-    <h2 class="text-center">Discover Food!</h2>
+    <h1 class="text-center">Welcome Foodies!</h1>
     <hr class="hr">
   </div>
 
@@ -94,7 +90,255 @@
   <div class="white_space"></div>
 
 
-<!-- paragraphs -->
+
+<!-- paragraphs new -->
+
+<!-- Tab links -->
+  <div id="recommendations"></div>
+
+  <div class="container-fluid bg-grey">
+  <div class="container">
+    <div>
+      <h2 class="par_title text-center">Our Recommendations</h2>
+      <br>
+    </div>
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'markets')" id="defaultOpen">Markets &amp Food Trucks</button>
+      <button class="tablinks" onclick="openTab(event, 'cafes')">Local Cafes</button>
+      <button class="tablinks" onclick="openTab(event, 'high-dining')">High Dining</button>
+      <button class="tablinks" onclick="openTab(event, 'international')">International Cuisine</button>
+    </div>
+  </div>
+</div>
+
+<!-- Tab content -->
+  <!--paragraph 1-->
+  <div id="markets" class="tabcontent container-fluid bg-grey">
+    <div>
+      <div class="container container_par">
+        <div>
+          <p class="par">A great way to score fresh food, Dublin's food markets give you a vibrant energetic experience. Check out our favourites down below.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>Running on <strong>Saturdays from 10-14:30</strong>, this market at the centre of Dublin offers great fresh options, rain or shine. Check them out on facebook!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">A great place to grab a meal for under a tenner, this market at the Art Park offers a delicious selection of meals from food trucks and local chefs every <strong>Wednesday from 11:30-14:00.</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">Lovely fresh and handpicked produce adorns these stalls, so make sure to come early to grab the best fruits and vegetables Ireland can offer! Find them on Cowpinger Row every <strong>Friday from 11:00-15:00</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey_space"></div>
+  </div>
+
+  <!--paragraph 2-->
+  <div id="cafes" class="tabcontent container-fluid bg-grey">
+    <div>
+      <div class="container container_par">
+        <div>
+          <p class="par">If you want a break from city bustle,...</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container container_white">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>Open<strong> every day of the week on Grafton Street</strong>, Bewley's has been a staple of Dublin city centre since it first opened, in 1927! Enjoy a coffee and scone in the remodelled Harry Clarke Gallery, or indulge in one of their many pastries and desserts!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">Just a block away on Dawson Street, this cafe will leave you happy with the delicious food and great coffee all squeezed into a small room.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">Just on the North side of town, this small independent cafe will both feed and entertain you with one of their many collabs with local musicians and artists. Step into one of their exhibitions or attend their live music nights, and you'll be sure to have a stellar evening.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey_space"></div>
+  </div>
+
+  <!--paragraph 3-->
+  <div id="high-dining" class="tabcontent container-fluid bg-grey">
+    <div>
+      <div class="container container_par">
+        <div>
+          <p class="par">If you like the finer things in life, then you'd certainly enjoy some of these higher class options. Definitely worth the price tag.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>Red checked tablecloths drape the pavement tables of this classical, Parisian-style bistro. Palace Street.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">An elegant style, Michelin starred restaurant, perfect for modern innovative dining, with a traditional Irish twist. Parnell Square.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">Intimate contemporary rooms with peat burning fireplaces for innovative and well presented plates. Merrion Street Upper.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey_space"></div>
+  </div>
+
+  <!--paragraph 4-->
+  <div id="international" class="tabcontent container-fluid bg-grey">
+    <div>
+      <div class="container container_par">
+        <div>
+          <p class="par">Travel the world from your own city with these lovely tastes of other countries and cultures. Enjoy our favourites below!</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container container_white">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>A stellar Indian restaurant in Dundrum, they will surely impress with their large array of flavours and great tasting menu.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">This Japanese and Korean fusion menu will definitely delight, so stop through Ranelagh to check them out!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">At Moro you will find a delicious mix of North African cuisine, with the owner's own creative twists! Head to Camden Street Lower to try for yourself.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey_space"></div>
+  </div>
+
+
+
+
+
+<!-- paragraph originals-->
+
+<!--
   <div id="markets"></div>
 
   <div class="container-fluid  bg-grey">
@@ -106,14 +350,14 @@
           <ul>
             <li>
               <h4 class="par_title">Temple Bar</h4>
-              <p class="par_text">Running on <strong>Saturdays from 10-14:30</strong>, this market at the centre of dublin offers great fresh options, rain or shine. Check them out on facebook!</p>
+              <p class="par_text">Running on <strong>Saturdays from 10-14:30</strong>, this market at the centre of Dublin offers great fresh options, rain or shine. Check them out on facebook!</p>
             </li>
             <li>
               <h4 class="par_title">Spencer Dock</h4>
               <p class="par_text">A great place to grab a meal for under a tenner, this market at the Art Park offers a delicious selection of meals from food trucks and local chefs every <strong>Wednesday from 11:30-14:00.</strong></p>
             </li>
             <li>
-              <h4 class="par_title">Smithfeild Outdoor Food Market</h4>
+              <h4 class="par_title">Smithfield Outdoor Food Market</h4>
               <p class="par_text">Lovely fresh and handpicked produce adorns these stalls, so make sure to come early to grab the best fruits and vegetables Ireland can offer! Find them on Cowpinger Row every <strong>Friday from 11:00-15:00</strong></p>
             </li>
           </ul>
@@ -129,7 +373,7 @@
     <div class="row par">
       <div class="col-sm-offset-3 col-sm-9">
         <h3 class="par_title"><strong>LOCAL CAFES</strong></h3>
-        <p class="par_text"><strong>If you want a break from city bustle,...</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p class="par_text"><strong>If you want a break from city bustle,...</strong></p>
         <p class="par_text">
           <ul>
             <li>
@@ -164,11 +408,11 @@
                 <p class="par_text">Red checked tablecloths drape the pavement tables of this classical, Parisian-style bistro. Palace Street</p>
               </li>
               <li>
-                <h4 class="par_title">Chapter One </h4>                  <p class="par_text"> An elegant style, Michelin starred restaurant, perfect for modern innovative dining, with a traditional Irish twist. Parnell Square</p>
+                <h4 class="par_title">Chapter One </h4>                  <p class="par_text">An elegant style, Michelin starred restaurant, perfect for modern innovative dining, with a traditional Irish twist. Parnell Square.</p>
               </li>
               <li>
                 <h4 class="par_title">Pearl Brasserie</h4>
-                <p class="par_text">Intimate contemporary rooms with peat burning fireplaces for innovative and well presented plates. Merrion Street Upper</p>
+                <p class="par_text">Intimate contemporary rooms with peat burning fireplaces for innovative and well presented plates. Merrion Street Upper.</p>
               </li>
            </ul>
           </p>
@@ -202,14 +446,15 @@
      </div>
    </div>
 
+-->
 
 <!--Meet The Team-->
 
   <div id="team"></div>
 
-  <div class="bg-grey">
+  <div>
     <div class="container team">
-      <h2 class="text-center">Meet the TEAM!</h3>
+      <h2 class="par_title text-center">Meet The Team</h2>
       <hr class="hr">
       <div class="row">
         <div class="column">
@@ -253,39 +498,39 @@
 
 </body>
 
-<footer class="container-fluid par_footer">
-  <h2 class="text-center">CONTACT</h2>
-  <hr class="hr">
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Dublin, Ireland</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+<footer class="container-fluid bg-grey">
+  <div class="container par_footer">
+    <h2 class="par_title text-center">Contact</h2>
+    <hr class="hr">
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon"></span><a href="#" class="fa fa-facebook"></a> +00 1515151515</p>
+        <p><span class="glyphicon"></span><a href="#" class="fa fa-instagram"></a> myemail@something.com</p>
+        <p><span class="glyphicon"></span><a href="#" class="fa fa-twitter"></a> Dublin, Ireland</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-  <div class="container-fluid  text-center">
-    <a href="#food" title="To Top">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p class="f_text">Back To Top</p>
+    <div class="container-fluid  text-center">
+      <a href="#food" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p class="f_text">Back To Top</p>
+    </div>
   </div>
 </footer>
