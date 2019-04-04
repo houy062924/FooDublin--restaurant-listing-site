@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 
-<!--TO BE FIXED: 1.nav bar not showing which page I'm on  2.smooth scrolling not working  3.logo position in nav bar  4.responsive navbar not working-->
-
-<!--ADD THIS FUNCTION TO PARAGRAPHS: https://www.w3schools.com/howto/howto_js_tabs.asp -->
-
-
 <head>
 
   <title>foodublin</title>
@@ -12,11 +7,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 
-<body data-spy='scroll' data-target='.navbar' data-offset='50' onload="document.getElementById('defaultOpen').click();">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" onload="document.getElementById('defaultOpen').click();">
 
 
 <!-- navigation bar -->
@@ -28,19 +24,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#home">
+        <a href="#myPage" class="navbar-brand">
           <button class="btn btn-default">
             <img src="top-logo.JPG" class="nav_logo" alt="Logo">
           </button>
-         </a>
+        </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#food">FOOD</a></li>
-          <li><a href="#markets">MARKETS</a></li>
-          <li><a href="#cafes">CAFES</a></li>
-          <li><a href="#international">INTERNATIONAL</a></li>
-          <li><a href="#fancy">FANCY</a></li>
+          <li><a href="#recommendations">RECOMMENDATIONS</a></li>
           <li><a href="#team">TEAM</a></li>
         </ul>
       </div>
@@ -48,11 +41,11 @@
   </nav>
 
 <!-- intro page -->
-  <div id="food"></div>
-
   <div class="jumbotron" id="jum_color">
     <img src="Inkedfoodublin_LI (2).JPG" alt="Logo" class="Logo">
   </div>
+
+  <div id="food"></div>
 
   <div class="container">
     <h1 class="text-center">Welcome Foodies!</h1>
@@ -100,7 +93,9 @@
 <!-- paragraphs new -->
 
 <!-- Tab links -->
-<div class="container-fluid bg-grey">
+  <div id="recommendations"></div>
+
+  <div class="container-fluid bg-grey">
   <div class="container">
     <div>
       <h2 class="par_title text-center">Our Recommendations</h2>
@@ -342,6 +337,7 @@
 
 <!-- paragraph originals-->
 
+<!--
   <div id="markets"></div>
 
   <div class="container-fluid  bg-grey">
@@ -449,14 +445,15 @@
      </div>
    </div>
 
+-->
 
 <!--Meet The Team-->
 
   <div id="team"></div>
 
-  <div class="bg-grey">
+  <div>
     <div class="container team">
-      <h2 class="text-center">Meet the TEAM!</h3>
+      <h2 class="text-center">Meet The Team</h2>
       <hr class="hr">
       <div class="row">
         <div class="column">
@@ -500,40 +497,39 @@
 
 </body>
 
-<footer class="container-fluid par_footer">
-  <h2 class="text-center">CONTACT</h2>
-  <hr class="hr">
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon"></span><a href="#" class="fa fa-facebook"></a> +00 1515151515</p>
-      <p><span class="glyphicon"></span><a href="#" class="fa fa-instagram"></a> myemail@something.com</p>
-      <p><span class="glyphicon"></span><a href="#" class="fa fa-twitter"></a> Dublin, Ireland</p>
-    </div>
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+<footer class="container-fluid bg-grey">
+  <div class="container par_footer">
+    <h2 class="text-center">Contact</h2>
+    <hr class="hr">
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon"></span><a href="#" class="fa fa-facebook"></a> +00 1515151515</p>
+        <p><span class="glyphicon"></span><a href="#" class="fa fa-instagram"></a> myemail@something.com</p>
+        <p><span class="glyphicon"></span><a href="#" class="fa fa-twitter"></a> Dublin, Ireland</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
+    </div>
+    <div class="container-fluid  text-center">
+      <a href="#food" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p class="f_text">Back To Top</p>
     </div>
   </div>
-
-
-  <div class="container-fluid  text-center">
-    <a href="#food" title="To Top">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p class="f_text">Back To Top</p>
-  </div>
-
 </footer>

@@ -74,46 +74,30 @@
 }
 
 /*---------linking navigation buttons to different parts in the page--------*/
-/*NEEDS EDITING AFTER CONTENT IS IN*/
-
-#home {
-  background-color: transparent;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
-
-#culture {
-  background-color: black;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
 
 #food {
-  background-color: black;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  top: -10%;
-}
-
-#events {
   background-color: transparent;
   height: 5px;
   width: 5px;
-  position: relative;
-  top: -10%;
+  position: absolute;
+  top: 93%;
+  z-index: 999;
+}
+
+#recommendations {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 328%;
 }
 
 #team {
   background-color: transparent;
   height: 5px;
   width: 5px;
-  position: relative;
-  top: -10%;
+  position: absolute;
+  top: 458%;
 }
 
 
@@ -249,6 +233,7 @@
   padding: 14px 16px;
   transition: 0.3s;
   border-bottom: 3px solid #fcdcd2;
+  border-radius: 20px 20px 0 0;
 }
 
 /* Change background color of buttons on hover */
@@ -256,6 +241,7 @@
   background-color: transparent;
   color: #333333;
   border-bottom: 3px solid #f4511e;
+  border-radius: 20px 20px 0 0;
 }
 
 /* Create an active/current tablink class */
@@ -263,6 +249,7 @@
   background-color: white;
   color: #333333;
   border-bottom: 3px solid #f4511e;
+  border-radius: 20px 20px 0 0;
 }
 
 /* Style the tab content */
@@ -448,6 +435,7 @@
   max-width: 60%;
   text-align: justify;
   font-family: Montserrat, sans-serif;
+  margin: 0 auto;
 }
 
 footer .glyphicon {
@@ -482,6 +470,7 @@ footer .glyphicon {
 .fa-twitter {
   background: #f4511e;
   color: white;
+}
 
 .f_text {
   font-family: Montserrat, sans-serif;
