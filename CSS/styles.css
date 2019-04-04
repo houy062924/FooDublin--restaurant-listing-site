@@ -43,6 +43,8 @@
   width: 100px;
 }
 
+
+
 /*-------------------home page-----------------------*/
 
 .jumbotron {
@@ -73,6 +75,8 @@
   width: 400px;
 }
 
+
+
 /*---------linking navigation buttons to different parts in the page--------*/
 
 #food {
@@ -101,7 +105,7 @@
 }
 
 
-/*-----------intro page-----------*/
+/*------------------------universal------------------------*/
 
 .container {
   margin: 0 auto;
@@ -124,6 +128,32 @@
   border-top: 2px solid #eee;
 }
 
+.par_title {
+  font-size: 30px;
+  font-family: Montserrat, sans-serif;
+}
+
+.white_space {
+  height: 27px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.grey_space {
+  height: 27px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.bg-grey {
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+
+
+/*------------------------intro page-----------------------*/
+
 .intro {
   font-size: 18px;
   line-height: 1.6;
@@ -139,14 +169,9 @@
   height: 500px;
 }
 
-.white_space {
-  height: 27px;
-  width: 100%;
-  background-color: transparent;
-}
 
 
-/*--------------gallery---------------*/
+/*---------------------------gallery--------------------------*/
 
 .container_gal {
   background-color: white;
@@ -201,7 +226,7 @@
 }
 
 
-/* ----------------------------Tab------------------------- */
+/* -------------------------------Tab----------------------------- */
 
 .container_par {
   margin: 0 auto;
@@ -259,8 +284,10 @@
   border-top: none;
 }
 
-/*-------------------paragraphs--------------------*/
 
+
+
+/*--------------------------paragraphs--------------------------*/
 
 .par {
   font-size: 18px;
@@ -326,34 +353,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-}
-
-.grey_space {
-  height: 27px;
-  width: 100%;
-  background-color: #f9f9f9;
-}
-
-/*par*/
-
-
-.par_title {
-  font-size: 30px;
-  font-family: Montserrat, sans-serif;
-}
-
-.par_text {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.bg-grey {
-  background-color: #f9f9f9;
-  width: 100%;
-}
-
-.cont_grey {
-  background-color: #f9f9f9;
 }
 
 
@@ -429,7 +428,9 @@
   color: #f4511e;
 }
 
-/*----------------footer---------------*/
+
+
+/*------------------------------footer----------------------------*/
 
 .par_footer {
   max-width: 60%;
