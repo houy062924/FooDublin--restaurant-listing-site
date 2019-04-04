@@ -217,6 +217,60 @@
 }
 
 
+/* ----------------------------Tab------------------------- */
+
+.container_par {
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  color: #333333;
+  font-size: 20px;
+  margin-top: 10px;
+  position: relative;
+  left: 9%;
+  max-width: 80vw;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-bottom: 3px solid #fcdcd2;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: transparent;
+  color: #333333;
+  border-bottom: 3px solid #f4511e;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: white;
+  color: #333333;
+  border-bottom: 3px solid #f4511e;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
 
 /*-------------------paragraphs--------------------*/
 
@@ -287,10 +341,6 @@
   }
 }
 
-.container_white {
-  background: white;
-}
-
 .grey_space {
   height: 27px;
   width: 100%;
@@ -301,9 +351,8 @@
 
 
 .par_title {
-  font-size: 26px;
+  font-size: 30px;
   font-family: Montserrat, sans-serif;
-  text-align: left;
 }
 
 .par_text {

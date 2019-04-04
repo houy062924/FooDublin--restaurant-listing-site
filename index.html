@@ -16,7 +16,7 @@
 
 </head>
 
-<body data-spy='scroll' data-target='.navbar' data-offset='50'>
+<body data-spy='scroll' data-target='.navbar' data-offset='50' onload="document.getElementById('defaultOpen').click();">
 
 
 <!-- navigation bar -->
@@ -99,228 +99,244 @@
 
 <!-- paragraphs new -->
 
-  <!--paragraph 1-->
-  <div class="container-fluid bg-grey">
-    <div class="container">
-      <div>
-        <h2 class="text-center">Markets and Food Trucks</h2>
-        <hr class="hr">
-        <p class="par">A great way to score fresh food,</strong> Dublin's food markets give you a vibrant energetic experience. Check out our favourites down below.</p>
-      </div>
+<!-- Tab links -->
+<div class="container-fluid bg-grey">
+  <div class="container">
+    <div>
+      <h2 class="par_title text-center">Our Recommendations</h2>
+      <br>
+    </div>
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'markets')" id="defaultOpen">Markets &amp Food Trucks</button>
+      <button class="tablinks" onclick="openTab(event, 'cafes')">Local Cafes</button>
+      <button class="tablinks" onclick="openTab(event, 'high-dining')">High Dining</button>
+      <button class="tablinks" onclick="openTab(event, 'international')">International Cuisine</button>
     </div>
   </div>
+</div>
 
-  <div class="container-fluid bg-grey">
-    <div class="container">
-      <div class="row">
+<!-- Tab content -->
+  <!--paragraph 1-->
+  <div id="markets" class="tabcontent container-fluid bg-grey">
+    <div>
+      <div class="container container_par">
+        <div>
+          <p class="par">A great way to score fresh food,</strong> Dublin's food markets give you a vibrant energetic experience. Check out our favourites down below.</p>
+        </div>
+      </div>
+    </div>
 
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
-              <div class="overlay">
-                <div class="overlay_text">
-                  <p>Running on <strong>Saturdays from 10-14:30</strong>, this market at the centre of Dublin offers great fresh options, rain or shine. Check them out on facebook!</p>
+    <div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>Running on <strong>Saturdays from 10-14:30</strong>, this market at the centre of Dublin offers great fresh options, rain or shine. Check them out on facebook!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">A great place to grab a meal for under a tenner, this market at the Art Park offers a delicious selection of meals from food trucks and local chefs every <strong>Wednesday from 11:30-14:00.</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">Lovely fresh and handpicked produce adorns these stalls, so make sure to come early to grab the best fruits and vegetables Ireland can offer! Find them on Cowpinger Row every <strong>Friday from 11:00-15:00</strong></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
-              <div class="overlay">
-                <div class="overlay_text">A great place to grab a meal for under a tenner, this market at the Art Park offers a delicious selection of meals from food trucks and local chefs every <strong>Wednesday from 11:30-14:00.</strong></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
-              <div class="overlay">
-                <div class="overlay_text">Lovely fresh and handpicked produce adorns these stalls, so make sure to come early to grab the best fruits and vegetables Ireland can offer! Find them on Cowpinger Row every <strong>Friday from 11:00-15:00</strong></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+
+    <div class="grey_space"></div>
   </div>
-
-  <div class="grey_space"></div>
-
 
   <!--paragraph 2-->
-  <div class="container-fluid">
-    <div class="container container_white">
-      <div>
-        <h2 class="text-center">Local Cafes</h2>
-        <hr class="hr">
-        <p class="par">If you want a break from city bustle,...</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="container container_white">
-      <div class="row">
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
-              <div class="overlay">
-                <div class="overlay_text">
-                  <p>Open<strong> every day of the week on Grafton Street</strong>, Bewley's has been a staple of Dublin city centre since it first opened, in 1927! Enjoy a coffee and scone in the remodelled Harry Clarke Gallery, or indulge in one of their many pastries and desserts!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
-              <div class="overlay">
-                <div class="overlay_text">Just a block away on Dawson Street, this cafe will leave you happy with the delicious food and great coffee all squeezed into a small room.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
-              <div class="overlay">
-                <div class="overlay_text">Just on the North side of town, this small independent cafe will both feed and entertain you with one of their many collabs with local musicians and artists. Step into one of their exhibitions or attend their live music nights, and you'll be sure to have a stellar evening.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="white_space"></div>
-
-
-  <!--paragragh 3-->
-  <div class="container-fluid bg-grey">
-    <div class="container">
-      <div>
-        <h2 class="text-center">High Dining</h2>
-        <hr class="hr">
-        <p class="par"><strong>If you like the finer things in life,</strong> then you'd certainly enjoy some of these higher class options. Definitely worth the price tag.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid bg-grey">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
-              <div class="overlay">
-                <div class="overlay_text">
-                  <p>Red checked tablecloths drape the pavement tables of this classical, Parisian-style bistro. Palace Street.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
-              <div class="overlay">
-                <div class="overlay_text">An elegant style, Michelin starred restaurant, perfect for modern innovative dining, with a traditional Irish twist. Parnell Square.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-md-4">
-          <div class="overlay_cont">
-            <div class="cont_hover">
-              <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
-              <div class="overlay">
-                <div class="overlay_text">Intimate contemporary rooms with peat burning fireplaces for innovative and well presented plates. Merrion Street Upper.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="grey_space"></div>
-
-
-<!--paragraph 4-->
-<div class="container-fluid">
-  <div class="container container_white">
+  <div id="cafes" class="tabcontent container-fluid bg-grey">
     <div>
-      <h2 class="text-center">International Cuisine</h2>
-      <hr class="hr">
-      <p class="par"><strong>Travel the world from your own city</strong> with these lovely tastes of other countries and cultures. Enjoy our favourites below!</p>
+      <div class="container container_par">
+        <div>
+          <p class="par">If you want a break from city bustle,...</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="container-fluid">
-  <div class="container container_white">
-    <div class="row">
+    <div>
+      <div class="container container_white">
+        <div class="row">
 
-      <div class="col-xs-6 col-md-4">
-        <div class="overlay_cont">
-          <div class="cont_hover">
-            <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
-            <div class="overlay">
-              <div class="overlay_text">
-                <p>A stellar Indian restaurant in Dundrum, they will surely impress with their large array of flavours and great tasting menu.</p>
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>Open<strong> every day of the week on Grafton Street</strong>, Bewley's has been a staple of Dublin city centre since it first opened, in 1927! Enjoy a coffee and scone in the remodelled Harry Clarke Gallery, or indulge in one of their many pastries and desserts!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">Just a block away on Dawson Street, this cafe will leave you happy with the delicious food and great coffee all squeezed into a small room.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">Just on the North side of town, this small independent cafe will both feed and entertain you with one of their many collabs with local musicians and artists. Step into one of their exhibitions or attend their live music nights, and you'll be sure to have a stellar evening.</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-xs-6 col-md-4">
-        <div class="overlay_cont">
-          <div class="cont_hover">
-            <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
-            <div class="overlay">
-              <div class="overlay_text">This Japanese and Korean fusion menu will definitely delight, so stop through Ranelagh to check them out!</div>
-            </div>
-          </div>
+    <div class="grey_space"></div>
+  </div>
+
+  <!--paragraph 3-->
+  <div id="high-dining" class="tabcontent container-fluid bg-grey">
+    <div>
+      <div class="container container_par">
+        <div>
+          <p class="par"><strong>If you like the finer things in life,</strong> then you'd certainly enjoy some of these higher class options. Definitely worth the price tag.</p>
         </div>
       </div>
+    </div>
 
-      <div class="col-xs-6 col-md-4">
-        <div class="overlay_cont">
-          <div class="cont_hover">
-            <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
-            <div class="overlay">
-              <div class="overlay_text">At Moro you will find a delicious mix of North African cuisine, with the owner's own creative twists! Head to Camden Street Lower to try for yourself.</div>
+    <div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>Red checked tablecloths drape the pavement tables of this classical, Parisian-style bistro. Palace Street.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">An elegant style, Michelin starred restaurant, perfect for modern innovative dining, with a traditional Irish twist. Parnell Square.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">Intimate contemporary rooms with peat burning fireplaces for innovative and well presented plates. Merrion Street Upper.</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="white_space"></div>
+    <div class="grey_space"></div>
+  </div>
+
+  <!--paragraph 4-->
+  <div id="international" class="tabcontent container-fluid bg-grey">
+    <div>
+      <div class="container container_par">
+        <div>
+          <p class="par"><strong>Travel the world from your own city</strong> with these lovely tastes of other countries and cultures. Enjoy our favourites below!</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container container_white">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="templebar2.jpg" alt="dublin.ie" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <p>A stellar Indian restaurant in Dundrum, they will surely impress with their large array of flavours and great tasting menu.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="spencerdock2.jpg" alt="eventbrite" class="event_img">
+                <div class="overlay">
+                  <div class="overlay_text">This Japanese and Korean fusion menu will definitely delight, so stop through Ranelagh to check them out!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="overlay_cont">
+              <div class="cont_hover">
+                <img src="smithfield3.jpeg" alt="dublintown" class="event_img"  style="background: white;">
+                <div class="overlay">
+                  <div class="overlay_text">At Moro you will find a delicious mix of North African cuisine, with the owner's own creative twists! Head to Camden Street Lower to try for yourself.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey_space"></div>
+  </div>
+
+
 
 
 
