@@ -190,7 +190,9 @@
   position: relative;
   width: 100%;
 }
-h2 {color: rgb(255,255,255);
+
+.marktext {
+  color: rgb(255, 255, 255);
   position: absolute;
   left: 32px;
   top: 40%;
@@ -198,7 +200,7 @@ h2 {color: rgb(255,255,255);
   padding: 25px;
   text-align: center;
   background-color: #8c52ff;
- }
+}
 
 /*---------------------------gallery--------------------------*/
 
