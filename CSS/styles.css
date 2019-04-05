@@ -75,7 +75,7 @@
 .Logo {
   padding-top: 10px;
   height: auto;
-  width: 600px;
+  width: 900px;
 }
 
 
@@ -185,6 +185,20 @@
     top: 20%;
   }
 }
+
+.marktitle {
+  position: relative;
+  width: 100%;
+}
+h2 {color: rgb(255,255,255);
+  position: absolute;
+  left: 32px;
+  top: 40%;
+  width: 80%;
+  padding: 25px;
+  text-align: center;
+  background-color: #8c52ff;
+ }
 
 /*---------------------------gallery--------------------------*/
 
