@@ -96,7 +96,7 @@
   height: 5px;
   width: 5px;
   position: absolute;
-  top: 311%;
+  top: 300%;
 }
 
 #team {
@@ -104,7 +104,7 @@
   height: 5px;
   width: 5px;
   position: absolute;
-  top: 441%;
+  top: 421%;
 }
 
 
@@ -261,6 +261,7 @@
   position: relative;
   left: 9%;
   max-width: 80vw;
+  margin: 10px auto 0 auto;
 }
 
 /* Style the buttons that are used to open the tab content */
