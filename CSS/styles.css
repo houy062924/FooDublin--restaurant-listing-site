@@ -41,6 +41,9 @@
 
 .nav_logo {
   width: 100px;
+  position: fixed;
+  top: 1%;
+  left: 1%;
 }
 
 
@@ -93,7 +96,7 @@
   height: 5px;
   width: 5px;
   position: absolute;
-  top: 328%;
+  top: 311%;
 }
 
 #team {
@@ -101,7 +104,7 @@
   height: 5px;
   width: 5px;
   position: absolute;
-  top: 458%;
+  top: 441%;
 }
 
 
@@ -166,10 +169,22 @@
   background: url('food.jpeg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 500px;
+  height: 400px;
 }
 
+.Logo {
+  max-height: 100vh;
+  max-width: 80vw;
+  position: relative;
+  top: 0;
+}
 
+@media screen and (max-width: 600px) {
+  .Logo {
+    position: relative;
+    top: 20%;
+  }
+}
 
 /*---------------------------gallery--------------------------*/
 
