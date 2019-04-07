@@ -48,60 +48,6 @@
 
 
 
-/*-------------------home page-----------------------*/
-
-.jumbotron {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  height: 100vh;
-}
-
-#jum_color {
-  background-color: #f4511e;
-  color: #ffffff;
-}
-
-.header {
-  height: 23%;
-  width: 60%;
-  background-color: white;
-  text-align: center;
-  display: inline-block;
-  color: #f4511e;
-  position: relative;
-  top: 35%;
-}
-
-
-
-/*---------linking navigation buttons to different parts in the page--------*/
-
-#food {
-  background-color: transparent;
-  height: 5px;
-  width: 5px;
-  position: absolute;
-  top: 93%;
-  z-index: 999;
-}
-
-#recommendations {
-  background-color: transparent;
-  height: 5px;
-  width: 5px;
-  position: absolute;
-  top: 300%;
-}
-
-#team {
-  background-color: transparent;
-  height: 5px;
-  width: 5px;
-  position: absolute;
-  top: 421%;
-}
-
-
 /*------------------------universal------------------------*/
 
 .container {
@@ -112,9 +58,9 @@
 }
 
 @media (min-width: 1200px) {
-    .container{
-      max-width: 80%;
-    }
+  .container{
+    max-width: 80%;
+  }
 }
 
 .hr {
@@ -146,6 +92,32 @@
   background-color: #f9f9f9;
   width: 100%;
 }
+
+
+/*-------------------home page-----------------------*/
+
+.jumbotron {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  height: 100vh;
+}
+
+#jum_color {
+  background-color: #f4511e;
+  color: #ffffff;
+}
+
+.header {
+  height: 23%;
+  width: 60%;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  color: #f4511e;
+  position: relative;
+  top: 35%;
+}
+
 
 
 
@@ -182,6 +154,13 @@
   }
 }
 
+#food {
+  background-color: transparent;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  top: 93%;
+}
 
 /*---------------------------gallery--------------------------*/
 
@@ -238,7 +217,11 @@
 }
 
 
-/* -------------------------------Tab----------------------------- */
+
+/*--------------------------Paragraphs--------------------------*/
+
+
+/* -----------tab------------- */
 
 .container_par {
   margin: 0 auto;
@@ -293,9 +276,7 @@
 }
 
 
-
-
-/*--------------------------paragraphs--------------------------*/
+/*----------paragraph text------------*/
 
 .par {
   font-size: 18px;
