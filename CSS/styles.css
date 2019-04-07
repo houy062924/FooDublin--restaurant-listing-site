@@ -16,7 +16,7 @@
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #f4511e !important;
+  color: #8c52ff !important;
   background-color: #fff !important;
 }
 
@@ -445,6 +445,7 @@
   font-size: 25px;
   text-align: left;
   margin-top: 10px;
+  color: #f4511e;
 }
 
 .title {
@@ -456,8 +457,8 @@
     text-align: left;
 }
 
-.glyphicon {
-  color: #f4511e;
+.glyphicon-envelope {
+  color: #8c52ff;
 }
 
 
