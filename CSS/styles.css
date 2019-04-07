@@ -72,12 +72,6 @@
   top: 35%;
 }
 
-.Logo {
-  padding-top: 10px;
-  height: auto;
-  width: 900px;
-}
-
 
 
 /*---------linking navigation buttons to different parts in the page--------*/
@@ -119,7 +113,7 @@
 
 @media (min-width: 1200px) {
     .container{
-        max-width: 80%;
+      max-width: 80%;
     }
 }
 
@@ -173,34 +167,21 @@
 }
 
 .Logo {
-  max-height: 100vh;
-  max-width: 80vw;
+  height: 80vh;
+  width: auto;
   position: relative;
   top: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .Logo {
     position: relative;
-    top: 20%;
+    top: 30%;
+    width: 80vw;
+    height: auto;
   }
 }
 
-.marktitle {
-  position: relative;
-  width: 100%;
-}
-
-.marktext {
-  color: rgb(255, 255, 255);
-  position: absolute;
-  left: 32px;
-  top: 40%;
-  width: 80%;
-  padding: 25px;
-  text-align: center;
-  background-color: #8c52ff;
-}
 
 /*---------------------------gallery--------------------------*/
 
@@ -266,7 +247,6 @@
   font-family: Montserrat, sans-serif;
 }
 
-/* Style the tab */
 .tab {
   overflow: hidden;
   background-color: transparent;
@@ -280,7 +260,6 @@
   margin: 10px auto 0 auto;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
   float: left;
@@ -293,7 +272,6 @@
   border-radius: 20px 20px 0 0;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: transparent;
   color: #333333;
@@ -301,7 +279,6 @@
   border-radius: 20px 20px 0 0;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: white;
   color: #333333;
@@ -309,7 +286,6 @@
   border-radius: 20px 20px 0 0;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -337,9 +313,9 @@
 }
 
 .event_img {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {
@@ -372,11 +348,11 @@
   text-align: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .overlay_text {
     color: white;
     width: 90%;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -387,6 +363,32 @@
   }
 }
 
+.marktitle {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.marktext {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 25px;
+  text-align: center;
+  background-color: #8c52ff;
+}
+
+@media screen and (max-width: 600px) {
+  .marktext {
+    font-size: 18px;
+    text-align: center;
+  }
+}
 
 
 /*--------------------Meet the team------------------------------*/
@@ -408,7 +410,6 @@
   background-color: white;
 }
 
-/* Three columns side by side*/
 .column {
   float: left;
   width: 33.3%;
@@ -416,7 +417,7 @@
   padding: 0 8px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .column {
     width: 100%;
     display: block;
@@ -474,7 +475,7 @@
 
 footer .glyphicon {
   font-size: 20px;
-  color: #f4511e;
+  color: #8c52ff;
 }
 
 .fa {
