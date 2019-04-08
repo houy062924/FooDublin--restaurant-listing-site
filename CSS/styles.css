@@ -139,7 +139,7 @@
 }
 
 .Logo {
-  height: 80vh;
+  max-height: 80vh;
   width: auto;
   position: relative;
   top: 0;
