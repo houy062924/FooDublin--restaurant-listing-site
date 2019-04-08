@@ -141,15 +141,15 @@
 
 .Logo {
   max-height: 90vh;
-  width: inherit;
+  width: 60vw;
   position: relative;
   top: 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
   .Logo {
     position: relative;
-    top: 30%;
+    top: 50%;
     width: 80vw;
     height: auto;
   }
