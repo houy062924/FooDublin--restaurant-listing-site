@@ -141,7 +141,7 @@
 
 .Logo {
   max-height: 80vh;
-  width: auto;
+  width: inherit;
   position: relative;
   top: 0;
 }
