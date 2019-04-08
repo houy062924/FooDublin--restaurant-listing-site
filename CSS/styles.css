@@ -456,8 +456,9 @@
   margin: 0 auto;
 }
 
-.btn-modal {
+#btn-modal {
   background-color: #8c52ff;
+  color: white;
 }
 
 #response-submittedLabel {
