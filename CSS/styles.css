@@ -455,6 +455,14 @@
   margin: 0 auto;
 }
 
+.btn-modal {
+  background-color: #8c52ff;
+}
+
+#response-submittedLabel {
+  font-weight: bold;
+}
+
 footer .glyphicon {
   font-size: 20px;
   color: #8c52ff;

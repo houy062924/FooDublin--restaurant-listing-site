@@ -413,7 +413,25 @@
         <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
+            <button class="btn btn-default pull-right" type="submit" data-toggle="modal" data-target="#response-submitted">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="response-submitted" tabindex="-1" role="dialog" aria-labelledby="response-submittedLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="response-submittedLabel">Thanks for your feedback!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          You're making foodublin better. We'll get back to you as soon as possible!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-modal" data-dismiss="modal">Back to foodublin</button>
           </div>
         </div>
       </div>
