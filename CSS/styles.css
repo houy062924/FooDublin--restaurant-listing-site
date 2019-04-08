@@ -351,6 +351,7 @@
 }
 
 .marktext {
+  font-size: 24px;
   color: rgb(255, 255, 255);
   position: absolute;
   left: 50%;
@@ -358,8 +359,8 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: 80%;
-  padding: 25px;
+  width: 70%;
+  padding: 20px;
   text-align: center;
   background-color: #8c52ff;
 }
