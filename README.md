@@ -18,6 +18,6 @@ FooDublin is a restaurant listing site that recommends the tastiest food in Dubl
 
 ## Site Demo
 
-![Alt text](readme/team.gif)
+![Alt text](ReadMe/team.gif)
 
-![Alt text](readme/recommendations.gif)
+![Alt text](ReadMe/recommendations.gif)
